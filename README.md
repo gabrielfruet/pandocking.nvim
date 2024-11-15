@@ -1,5 +1,18 @@
-**pandocking.nvim: Your Swiss Army Knife for Pandoc**
+**pandocking.nvim: be the king of your documents**
 =====================================================
+
+**What Pandocking means?**
+
+The term "pandocking" has a dual meaning in the context of pandocking.nvim. On
+one hand, "pandocking" can be interpreted as "Pandoc King," implying a mastery
+or dominance over the art of using Pandoc.
+
+On the other hand, "pandocking" can be seen as a verb, describing the act of
+using Pandoc to transform and manipulate documents. In this sense, "pandocking"
+represents the process of converting, formatting, and customizing documents
+using Pandoc's capabilities.
+
+**What Pandocking is?**
 
 pandocking.nvim is a neovim plugin that simplifies the process
 of working with [Pandoc](https://pandoc.org/). With pandocking, you can
