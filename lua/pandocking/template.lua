@@ -47,8 +47,6 @@ function PandocCmdTemplate.new(tbl)
         error('Something went wrong on the default values of template')
     end
 
-    os.execute('mkdir -p ' .. instance.arguments.output_path)
-
     instance.table_editor = TableEditor.new(instance, 'arguments')
 
     return instance
@@ -64,6 +62,9 @@ end
 ---@return string | nil
 function PandocCmdTemplate:compile(values)
     values = values or {}
+
+    os.execute('mkdir -p ' .. self.arguments.output_path)
+
     local final_values = vim.tbl_extend('force', self.arguments, values)
     return strmanip.subs(self.compile_cmd, final_values)
 end
